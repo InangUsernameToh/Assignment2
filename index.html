@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://images5.alphacoders.com/419/419690.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Main container for the login form */
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Input field styling */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-field:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        /* Button styling */
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Link styling */
+        .signup-link {
+            color: #555;
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Error message styling */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form action="" method="POST">
+            <!-- Username Input -->
+            <input type="text" class="input-field" placeholder="Username" name="username" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            </select>
+
+            <!-- Password Input -->
+            <input type="password" class="input-field" placeholder="Password" name="password" required><br>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <!-- Signup link -->
+        <a href="#" class="signup-link">Don't have an account? Sign up</a>
+
+        <!-- Error message (if applicable) -->
+        <div class="error-message">
+            <!-- Example: "Invalid username or password" -->
+            <!-- This part is just an example, you would dynamically populate this in a real scenario -->
+        </div>
+    </div>
+
+</body>
+</html>
